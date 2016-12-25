@@ -16,7 +16,6 @@ ssh $host << HERE
 HERE
 
 scp $host:/tmp/query-output.csv $path
-# cat /Users/moshek/repos/my-scripts-repo/run-mysql-quertys/smart-platform-query/query-output.csv
 
 ssh $host << HERE
  sudo su root
