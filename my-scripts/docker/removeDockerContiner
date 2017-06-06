@@ -1,0 +1,13 @@
+#!/bin/bash
+
+con=$1
+
+if [ -z "$con" ]
+then
+  echo "[ERROR] - You should insert canteinerId!"
+else
+  echo "Stoping $con"
+  docker stop "$con"
+  echo "Removing $con"
+  docker rm "$con"
+fi
