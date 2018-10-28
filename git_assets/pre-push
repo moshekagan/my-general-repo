@@ -4,7 +4,7 @@ from subprocess import call
 
 cwd = os.getcwd()
 
-if call(["python", cwd + "/git_assets/pre-push-runner.sh"]) == 0:
+if call(["python", cwd + "/git_assets/pre-push-runner.py"]) == 0:
   print 'Tests passed successfully.'
 else:
   print 'Some tests failed :('
