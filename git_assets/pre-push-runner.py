@@ -1,4 +1,4 @@
-from subprocess import call, DEVNULL
+from subprocess import call
 
 gcp_sdk_path='/Users/kaganmoshe/workspace/google-cloud-sdk'
 illist_path='/Users/kaganmoshe/repos/illist'
