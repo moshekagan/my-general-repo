@@ -6,9 +6,10 @@ cwd = os.getcwd()
 
 if call(["python", cwd + "/git_assets/pre-push-runner.py"]) == 0:
   print 'Tests passed successfully.'
+  exit(1)
 else:
   print 'Some tests failed :('
-
+  exit(0)
 
 
 
