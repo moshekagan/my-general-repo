@@ -10,7 +10,6 @@ echo About to run: python $illist_path/illistsite/test_runner.py $gcp_sdk_path/p
 python $illist_path/illistsite/test_runner.py $gcp_sdk_path/platform/google_appengine --test-path=tests
 test_result=$?
 
-
 if [ "$test_result" = 0 ]; then
     printf -- '\033[32m SUCCESS: Tests passed successfully :) \033[0m\n';
     exit 0
